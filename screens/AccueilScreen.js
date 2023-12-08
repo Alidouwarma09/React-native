@@ -1,11 +1,19 @@
-// AccueilScreen.tsx
+// AccueilScreen.js
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const AccueilScreen = () => {
+  const navigation = useNavigation();
+
+  const goToJeuxScreen = () => {
+    navigation.navigate('Jeux');
+  };
+
   return (
     <View>
-      <Text>Accueil Screen</Text>
+      <Text>Etes-vous pret pour Jouer ?</Text>
+      <Button title="Jouer" onPress={goToJeuxScreen} />
     </View>
   );
 };

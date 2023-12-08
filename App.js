@@ -1,13 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';  // Importez View depuis 'react-native'
-import AppNavigator from './AppNavigator';
+import AppNavigator from './AppNavigator.js';
 
-const ComputeScreen = () => {
+const App = () => {
   return (
-    <View>
-      <AppNavigator />
-    </View>
+  <AppNavigator />
   );
 };
 
-export default ComputeScreen;
+export default App;

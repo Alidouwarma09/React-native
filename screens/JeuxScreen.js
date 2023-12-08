@@ -26,7 +26,7 @@ const JeuxScreen = () => {
       <Text>Écran Jeux</Text>
       <TextInput
         style={styles.input}
-        placeholder="Entrez un nombre"
+        placeholder="Entrez un nombre "
         keyboardType="numeric"
         value={number}
         onChangeText={(text) => setNumber(text)}
